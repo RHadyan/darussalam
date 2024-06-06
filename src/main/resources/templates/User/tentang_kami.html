@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--=============== ICON ===============-->
+  <link rel="shortcut icon" href="images/logo.png" />
+
+  <!--=============== Tailwind ===============-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--=============== Fontawesome ===============-->
+  <script src="https://kit.fontawesome.com/f87eaab4e6.js" crossorigin="anonymous"></script>
+
+  <title>Yayasan Darusaa'adah Mubarakah</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container__">
+      <a href="#" class="nav__logo">
+        <img src="images/logo.png" class="w-16 inline me-2" alt="">
+        Daarussa’adah Mubarakah
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/index" class="nav__link">Beranda</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/tentang_kami" class="nav__link">Tentang Kami</a>
+          </li>
+
+          <li class="nav__dropdown">
+            <a href="#" class="nav__dropdown__title">Layanan <i class="ri-arrow-drop-down-line"></i></a>
+            <ul class="nav__dropdown__list">
+              <li class="nav__dropdown__item"><a href="/zakat-fitrah" class="nav__dropdown__link">Zakat Fitrah</a>
+              </li>
+              <li class="nav__dropdown__item"><a href="/zakat-mal" class="nav__dropdown__link">Zakat Mal</a></li>
+              <li class="nav__dropdown__item"><a href="/donasi" class="nav__dropdown__link">Donasi</a></li>
+              <!-- <li class="nav__dropdown__item"><a href="faq.html" class="nav__dropdown__link">FAQ</a></li> -->
+            </ul>
+          </li>
+
+          <li class="nav__item">
+            <a href="/blog" class="nav__link">Blog</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/kontak" class="nav__link">Kontak</a>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__actions">
+        <!-- Search button -->
+        <!-- <i class="ri-search-line nav__search" id="search-btn"></i> -->
+
+        <!-- Login button -->
+        <i class="ri-user-line nav__login" id="login-btn"></i>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== SEARCH ====================-->
+  <div class="search" id="search">
+    <form action="" class="search__form">
+      <i class="ri-search-line search__icon"></i>
+      <input type="search" placeholder="What are you looking for?" class="search__input" />
+    </form>
+
+    <i class="ri-close-line search__close" id="search-close"></i>
+  </div>
+
+  <!--==================== LOGIN ====================-->
+  <div class="login" id="login">
+    <form action="" class="login__form">
+      <h2 class="login__title">Log In</h2>
+
+      <div class="login__group">
+        <div>
+          <label for="email" class="login__label">Email</label>
+          <input type="email" placeholder="Write your email" id="email" class="login__input" />
+        </div>
+
+        <div>
+          <label for="password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="password" class="login__input" />
+        </div>
+      </div>
+
+      <div>
+        <p class="login__signup">
+          You do not have an account? <a href="#">Sign up</a>
+        </p>
+
+        <a href="#" class="login__forgot"> You forgot your password </a>
+
+        <button type="submit" class="login__button">Log In</button>
+      </div>
+    </form>
+
+    <i class="ri-close-line login__close" id="login-close"></i>
+  </div>
+
+
+  <div class="w-3/4 mb-[100px] mx-auto drop-shadow bg-white py-5">
+    <div class="text-2xl font-bold text-center text-black">Sejarah</div>
+    <div class="flex flex-wrap lg:flex-nowrap justify-center pb-5 px-5">
+      <!-- <div class="drop-shadow-lg m-5">
+        <img src="images/logo.png" class="justify-center w-36" alt="" />
+      </div> -->
+      <div class="w-full">
+        <div class="mt-5 space-y-3">
+          <p>
+            Yayasan Daarussa’adah Mubarokah merupakan sebuah lembaga yang
+            bergerak dalam bidang pendidikan, sosial dan keagamaan sejak
+            didirikan pada tanggal 16 Juli tahun 1987. Berlokasi di jalan
+            Rawamangun Utara II RT 011 RW 01 no. 24, Kelurahan Rawasari,
+            Kecamatan Cempaka Putih, Jakarta Pusat.
+          </p>
+          <p>
+            Pada tahun 2011, yayasan mengalami perubahan dalam pengurusannya.
+            Sebagai bentuk penyesuaian dan pengembangan, nama yayasan diubah
+            menjadi Yayasan Daarussa’adah Mubarokah, menggantikan nama
+            sebelumnya yang telah digunakan oleh yayasan lain. Perubahan ini
+            disertai dengan pengesahan resmi oleh SK Menteri Kehakiman dan HAM
+            RI pada tanggal 4 Juli tahun 2002 serta SK Badan Pertahanan Nasional
+            pada tanggal 4 Maret tahun 2004.
+          </p>
+          <p>
+            Dengan semangat dan komitmen yang terus berkobar, Yayasan
+            Daarussa’adah Mubarokah terus berupaya untuk menjadi lembaga yang
+            bermanfaat bagi masyarakat, menjalankan misi mulianya dalam mendidik
+            generasi penerus yang berkarakter, berilmu, dan berakhlak mulia,
+            serta terus memberikan kontribusi positif bagi kemajuan
+            bangsa dan negara.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center lg:flex-nowrap gap-20 mt-[50px] mb-[50px]">
+      <div
+        class="border-8 border-white flex flex-col justify-center w-full shadow-lg lg:w-80 lg:aspect-square bg-first p-2 transition duration-300 hover:scale-105">
+        <div class="text-center text-white text-2xl font-bold mx-auto">Visi</div>
+        <div class="text-white text-center mt-3">
+          <p>
+            Menjadi lembaga sosial dakwah profesional dan amanah sesuai harapan ummat dan membangun pendidikan Islam
+            berdasarkan dalam Al-Qur'an dan Sunnah Rasulullah SAW untuk menegakkan eksistensi manusia sebagai
+            khalifatullah
+            fil ardh.
+          </p>
+        </div>
+      </div>
+      <div
+        class="border-8 border-white flex flex-col justify-center w-full shadow-lg lg:w-80 lg:aspect-square bg-first p-2 transition duration-300 hover:scale-105">
+        <div class="text-center text-white text-2xl font-bold mx-auto">Misi</div>
+        <div class="text-white text-center mt-3">
+          <p>
+            Menyebarkan sebuah media dakwah Islamiyah melalui pemurnian ajaran Islam dan
+            pembinaan dengan hikmah serta mendidik generasi intelektual Muslim yang bertauhid. Beribadah
+            dengan benar dan berahlak yang mulia.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full mx-auto rounded">
+      <div class="font-body text-black text-2xl text-center m-5 text-2xl font-bold">
+        Program Utama
+      </div>
+      <div class="flex justify-center">
+        <ul class="w-full lg:w-3/4 mx-auto divide-y shadow rounded-xl">
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Program Dakwah</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+
+              <article class="p-4">
+                <p>
+                  Menyediakan konten syiar dakwah islam melalui youtube Yayasan Daarussa’adah Mubarokah.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Program Pendidikan</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+
+              <article class="p-4">
+                <p>
+                  Menyediakan program belajar mengajar pendidikan anak usia dasar pada Yayasan Daarussa’adah Mubarokah.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Program Sosial</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+
+              <article class="p-4">
+                <p>
+                  Menerima dan menyalurkan zakat dan donasi kepada masyarakat sekitar Yayasan Daarussa’adah Mubarokah.
+                </p>
+              </article>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w-full mx-auto rounded mb-[50px]">
+      <div class="font-body text-black text-2xl text-center m-5 text-2xl font-bold">
+        FAQ
+      </div>
+      <div class="flex justify-center">
+        <ul class="w-full lg:w-3/4 mx-auto divide-y shadow rounded-xl">
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Kemana zakat pada Yayasan Darussa’adah Mubarokah disalurkan?</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+
+              <article class="p-4">
+                <p>
+                  Zakat adalah kewajiban dalam Islam dan harus disalurkan kepada delapan golongan penerima yang disebut
+                  "asnaf" sebagaimana tercantum dalam Surah At-Tawbah (9:60). Berikut adalah delapan golongan penerima
+                  zakat:
+                  Fakir (Al-Fuqara'),
+                  Miskin (Al-Masakin),
+                  Amil Zakat (Al-‘Amilina ‘Alayha),
+                  Muallaf (Al-Mu’allafatu Qulubuhum),
+                  Hamba Sahaya (Ar-Riqab),
+                  Gharimin,
+                  Fisabilillah, dan
+                  Ibnu Sabil
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Kemana zakat pada Yayasan Darussa’adah Mubarokah disalurkan?</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+              <article class="p-4">
+                <p>
+                  Donasi ini akan disalurkan kepada pembangunan pesantren, dan PAUD Islam pada Yayasan Darussa’adah
+                  Mubarokah.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Bagaimana cara perhitungan zakat maal?</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+
+              <article class="p-4">
+                <p>
+                  Jumlah kekayaan dikurangi hutang, jika hasilnya lebih besar dari sama dengan setara harga emas 85
+                  gram, maka jumlah zakat yang harus dibayar adalah total kekayaan dikalikan dengan 2.5%. Namun apabila
+                  total kekayaan kurang dari setara harga emas 85 gram, maka tidak diwajibkan membayar zakat maal.
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Bagaimana cara pembayaran zakat dan donasi?</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+
+              <article class="p-4">
+                <p>
+                  Pastikan Aplikasi Pembayaran: Pastikan Anda memiliki aplikasi pembayaran yang mendukung QRIS, seperti
+                  aplikasi mobile banking, dompet digital (e-wallet), atau aplikasi pembayaran lainnya yang terdaftar di
+                  QRIS.
+
+                <ol>
+                  <li>
+                    1. Buka Aplikasi: Buka aplikasi pembayaran di smartphone Anda.
+                  </li>
+                  <li>
+                    2. Pilih Menu Pembayaran dengan QR Code: Cari dan pilih opsi untuk pembayaran menggunakan QR code.
+                    Ini
+                    biasanya ditandai dengan ikon atau menu bertuliskan "Scan QR" atau "Bayar dengan QR".
+                  </li>
+                  <li>
+                    3. Pindai Kode QR: Arahkan kamera smartphone Anda ke kode QR yang disediakan oleh pedagang atau
+                    tempat
+                    yang ingin Anda bayar. Pastikan kode QR terdeteksi dengan jelas oleh aplikasi.
+                  </li>
+                  <li>
+                    4. Masukkan Jumlah Pembayaran: Jika jumlah pembayaran tidak otomatis terisi, masukkan jumlah yang
+                    harus
+                    dibayarkan.
+                  </li>
+                  <li>
+                    5. Konfirmasi Pembayaran: Periksa kembali detail pembayaran seperti nama penerima dan jumlah yang
+                    harus
+                    dibayar. Jika sudah benar, konfirmasi pembayaran.
+                  </li>
+                  <li>
+                    6. Selesai: Setelah konfirmasi, Anda akan menerima notifikasi bahwa pembayaran telah berhasil.
+                  </li>
+                  <li>
+                    7. Upload bukti pembayaran ke form yang sudah disediakan.
+                  </li>
+                </ol>
+                </p>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-medium bg-first p-5 text-white">
+                <span>Bagaimana cara konfirmasi pembayaran?</span>
+                <span class="transition group-open:rotate-90">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </summary>
+              <article class="p-4">
+                <p>
+                  Setelah mengirim bukti pembayaran pada form admin akan menghubungi anda melalui email atau whatsapp
+                  sebagai konfirmasi pembayaran tersebut.
+                </p>
+              </article>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-8 bg-gray-900 text-white">
+    <div class="mx-auto flex flex-wrap justify-center w-4/5">
+      <!-- Kolom Pertama -->
+      <div class="w-full lg:w-1/2 px-5">
+        <h3 class="text-xl font-landing font-bold mb-4">
+          Yayasan Daarussa'adah Mubarokah
+        </h3>
+        <p class="font-landing text-gray-300 mb-4">
+          Yayasan Daarussa’adah Mubarokah merupakan sebuah lembaga yang
+          bergerak dalam bidang pendidikan, sosial dan keagamaan. Berlokasi di jalan
+          Rawamangun Utara II RT 011 RW 01 no. 24, Kelurahan Rawasari,
+          Kecamatan Cempaka Putih, Jakarta Pusat.
+        </p>
+      </div>
+      <!-- Kolom Kedua -->
+      <div class="flex flex-col gap-2 w-full lg:w-1/2 px-5">
+        <h3 class="text-xl font-landing font-bold mb-4">Hubungi Kami</h3>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-phone"></i>
+          <span class="font-landing">+62 87891987242</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i>
+          <span class="font-landing">yayasandarussadah@gmail.com</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-house"></i>
+          <span class="font-landing">Alamat: Jalan Rawamangun Utara II RT 011 RW 01 no. 24, Kelurahan
+            Rawasari,
+            Kecamatan Cempaka Putih, Jakarta Pusat.</span>
+        </div>
+      </div>
+      <!-- <div class="w-full lg:w-2/6 px-4">
+        <h3 class="text-xl font-landing font-bold mb-4">REKENING DONASI</h3>
+        <div class="flex items-center mb-4">
+          <span class="font-landing">Bank Syariah Indonesia (BSI) | 4500003341</span>
+        </div>
+      </div> -->
+  </footer>
+
+  <script src="app.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="main.js"></script>
+  <script src="tailwind.config.js"></script>
+</body>
+
+</html>

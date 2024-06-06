@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <!--=============== Tailwind ===============-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--=============== Fontawesome ===============-->
+    <script src="https://kit.fontawesome.com/f87eaab4e6.js" crossorigin="anonymous"></script>
+
+    <title>Yayasan Darusaa'adah Mubarakah </title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container__">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.png" class="w-16 inline me-2" alt="">
+                Daarussa’adah Mubarakah
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/index" class="nav__link">Beranda</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/tentang_kami" class="nav__link">Tentang Kami</a>
+                    </li>
+
+                    <li class="nav__dropdown">
+                        <a href="#" class="nav__dropdown__title">Layanan <i class="ri-arrow-drop-down-line"></i></a>
+                        <ul class="nav__dropdown__list">
+                            <li class="nav__dropdown__item"><a href="/zakat-fitrah" class="nav__dropdown__link">Zakat Fitrah</a>
+                            </li>
+                            <li class="nav__dropdown__item"><a href="/zakat-mal" class="nav__dropdown__link">Zakat Mal</a></li>
+                            <li class="nav__dropdown__item"><a href="/donasi" class="nav__dropdown__link">Donasi</a></li>
+                            <!-- <li class="nav__dropdown__item"><a href="faq.html" class="nav__dropdown__link">FAQ</a></li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/blog" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/kontak" class="nav__link">Kontak</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <!-- <i class="ri-search-line nav__search" id="search-btn"></i> -->
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <div class="w-3/4 mb-[100px] mx-auto drop-shadow bg-white pt-5">
+        <div class="font-body text-black text-2xl text-center font-bold mb-5">Kontak Yayasan Daarussa’adah Mubarakah
+        </div>
+        <div class="w-full">
+            <iframe class="w-full aspect-video"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5321358729907!2d106.8584119!3d-6.1932939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f45dd2780593%3A0xf1ec620b17d10679!2sYayasan%20Daarussa%E2%80%99adah%20Mubarokah!5e0!3m2!1sid!2sid!4v1715962029573!5m2!1sid!2sid"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="font-body text-black text-xl text-center font-bold py-5">Anda dapat menghubungi kami melalui form di
+            bawah ini:</div>
+        <div class="flex flex-wrap lg:flex-nowrap">
+            <div class="w-full flex flex-col bg-first p-5 space-y-3">
+                <div class="font-body text-white text-2xl text-center font-bold">Kontak Kami</div>
+                <div class="">
+                    <p class="font-body text-white text-center">Untuk mendapatkan informasi yang lebih lengkap, silahkan
+                        hubungi kami pada kontak yang
+                        tertera di bawah ini</p>
+                </div>
+                <div class="flex flex-col justify-center gap-3">
+                    <div class="flex flex-row justify-center text-white items-center mb-4">
+                        <i class="fa-solid fa-location-dot mr-2"></i>
+                        <span>Jalan Cempaka Putih, Jakarta Pusat No. 20</span>
+                    </div>
+                    <div class="flex flex-row justify-center text-white items-center mb-4">
+                        <i class="fa-solid fa-envelope mr-2"></i>
+                        <span>yayasandarussadah@gmail.com</span>
+                    </div>
+                    <div class="flex flex-row justify-center text-white items-center mb-4">
+                        <i class="fa-solid fa-phone mr-2"></i>
+                        <span>+62 878-9198-7242</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col bg-white p-5 space-y-3">
+                <div class="text-2xl text-center">Hubungi Kami </div>
+                <form action="" class="space-y-3 px-5">
+
+                    <div class="w-full">
+                        <input class="bg-gray-100 p-2 rounded w-full" type="text" name="nama" placeholder="Nama">
+                    </div>
+                    <div class="w-full">
+                        <input class="bg-gray-100 p-2 rounded w-full" type="text" name="no_hp" placeholder="No HP">
+                    </div>
+                    <div class="w-full">
+                        <input class="bg-gray-100 p-2 rounded w-full" type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="w-full">
+                        <textarea name="pesan" id="" class="bg-gray-100 p-2 rounded w-full h-16"
+                            placeholder="Pesan"></textarea>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button type="submit" class="w-16 h-8 bg-first rounded btn text-white text-center font-body">
+                            Kirim
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="mx-auto flex flex-wrap justify-center w-4/5">
+            <!-- Kolom Pertama -->
+            <div class="w-full lg:w-1/2 px-5">
+                <h3 class="text-xl font-landing font-bold mb-4">
+                    Yayasan Daarussa'adah Mubarokah
+                </h3>
+                <p class="font-landing text-gray-300 mb-4">
+                    Yayasan Daarussa’adah Mubarokah merupakan sebuah lembaga yang
+                    bergerak dalam bidang pendidikan, sosial dan keagamaan. Berlokasi di jalan
+                    Rawamangun Utara II RT 011 RW 01 no. 24, Kelurahan Rawasari,
+                    Kecamatan Cempaka Putih, Jakarta Pusat.
+                </p>
+            </div>
+            <!-- Kolom Kedua -->
+            <div class="flex flex-col gap-2 w-full lg:w-1/2 px-5">
+                <h3 class="text-xl font-landing font-bold mb-4">Hubungi Kami</h3>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="font-landing">+62 87891987242</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="font-landing">yayasandarussadah@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="font-landing">Alamat: Jalan Rawamangun Utara II RT 011 RW 01 no. 24, Kelurahan
+                        Rawasari,
+                        Kecamatan Cempaka Putih, Jakarta Pusat.</span>
+                </div>
+            </div>
+            <!-- <div class="w-full lg:w-2/6 px-4">
+            <h3 class="text-xl font-landing font-bold mb-4">REKENING DONASI</h3>
+            <div class="flex items-center mb-4">
+              <span class="font-landing">Bank Syariah Indonesia (BSI) | 4500003341</span>
+            </div>
+          </div> -->
+    </footer>
+
+    <script src="app.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+    <script src="tailwind.config.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--=============== ICON ===============-->
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <!--=============== Tailwind ===============-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--=============== Fontawesome ===============-->
+    <script src="https://kit.fontawesome.com/f87eaab4e6.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <title>Yayasan Darusaa'adah Mubarakah </title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container__">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.png" class="w-16 inline me-2" alt="">
+                Daarussa’adah Mubarakah
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/index" class="nav__link">Beranda</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/tentang_kami" class="nav__link">Tentang Kami</a>
+                    </li>
+
+                    <li class="nav__dropdown">
+                        <a href="#" class="nav__dropdown__title">Layanan <i class="ri-arrow-drop-down-line"></i></a>
+                        <ul class="nav__dropdown__list">
+                            <li class="nav__dropdown__item"><a href="/zakat-fitrah" class="nav__dropdown__link">Zakat Fitrah</a>
+                            </li>
+                            <li class="nav__dropdown__item"><a href="/zakat-mal" class="nav__dropdown__link">Zakat Mal</a></li>
+                            <li class="nav__dropdown__item"><a href="/donasi" class="nav__dropdown__link">Donasi</a></li>
+                            <!-- <li class="nav__dropdown__item"><a href="faq.html" class="nav__dropdown__link">FAQ</a></li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/blog" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/kontak" class="nav__link">Kontak</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <!-- <i class="ri-search-line nav__search" id="search-btn"></i> -->
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <div class="w-3/4 mb-[100px] mx-auto drop-shadow">
+        <a href="">
+            <img src="images/header-form-zakat-mal.jpg" alt="">
+        </a>
+        <div class="flex flex-col p-10 bg-white">
+            <div class="font-bold text-black text-2xl text-center">TUNAIKAN ZAKAT MAAL ANDA</div>
+            <div class="font-bold text-black text-2xl mb-5 text-center">DENGAN AMAN DAN MUDAH</div>
+            <div class="flex flex-col items-center border-2 p-5">
+                <div class="font-bold text-black text-2xl mb-5 text-center">FORM ZAKAT MAAL</div>
+                <div class="w-full flex justify-center mb-5">
+                    <div id="containerBayar" class="w-full flex justify-center border-b-2 border-black">
+                        <button id="toggleFormZakatMal" class="text-xl text-black">Bayar</button>
+                    </div>
+                    <div id="containerKalkulator" class="w-full flex justify-center">
+                        <button id="toggleFormKalkulator" class="text-xl text-black">Kalkulator</button>
+                    </div>
+                </div>
+                <form id="formZakatMal" action="" class="flex flex-col items-center">
+                    <div class="w-full mb-7">
+                        <input type="text" placeholder="Nama Lengkap" class="w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7">
+                        <input type="radio" name="jk" id="jk1" value="Laki-laki">
+                        <label for="jk1">Laki-laki</label>
+                        <input type="radio" name="jk" id="jk2" value="Perempuan">
+                        <label for="jk1">Perempuan</label>
+                    </div>
+                    <div class="w-full mb-7">
+                        <input type="text" placeholder="Bin / Binti" class="w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7">
+                        <input type="text" placeholder="Nominal"
+                            class="input-number w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7">
+                        <input type="text" placeholder="No. Telepon"
+                            class="telepon w-full px-4 bg-gray-100 py-3 shadow">
+                        <script>
+                            function formatAngka(angka) {
+                                var number_string = angka.replace(/[^,\d]/g, '').toString(); //Menghapus huruf                            
+                                return number_string;
+                            }
+
+                            $(".telepon").keyup(function (e) {
+                                {
+                                    
+                                    $(this).val(formatAngka($(this).val()))
+                                }
+                            })
+                        </script>
+                    </div>
+                    <div class="w-full mb-7">
+                        <input type="email" placeholder="Email" class="w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7">
+                        <textarea name="pesan" id="" placeholder="Pesan"
+                            class="w-full h-24 px-4 bg-gray-100 py-3 shadow"></textarea>
+                    </div>
+                    <div class="w-full mb-7 flex justify-center">
+                        <img src="images/qris.jpg" class="h-60" alt="">
+                        <!-- <div id="result" class="hidden">
+                        <div class="divider"></div>
+                        <div id="qrimage" class="flex justify-center"></div>
+                    </div>
+                    <script>                        
+                        let result = document.getElementById('result');
+                        let qrimage = document.getElementById('qrimage');
+
+                        let image = new Image();
+
+                        // buat kode qr nya dari api
+                        image.src = `https://api.qrserver.com/v1/create-qr-code?size=150x150&data=tegar`;
+
+                        // kalau image.src itu udah ke load
+                        image.onload = function () {
+                            // ubah element di dalam #qrimage dengan tag img yang diisi gambar qr code tadi
+                            qrimage.innerHTML = `<img src="${image.src}" class="flex-initial w-96" alt="qr" />`;
+
+                            // hilangkan class hidden pada #result agar tag/element apa saja yang ada di dalam #result akan keliatan
+                            result.classList.remove("hidden");
+                        }
+                    </script> -->
+                    </div>
+                    <div class="w-full mb-7">
+                        <input type="file" name="" id=""
+                            class="w-full file:mr-5 file:py-1 file:px-3 file:border-none file:w-full file:bg-stone-50 file:text-stone-700 hover:file:cursor-pointer hover:file:bg-blue-50 hover:file:text-blue-700">
+                    </div>
+                    <div class="mb-3">
+                        <p>
+                            Dengan mengisi formulir ini, donatur akan menerima Bukti Setor Zakat (BSZ), laporan
+                            penyaluran, info layanan Zakat melalui email & whatsapp.
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <button type="submit"
+                            class="bg-first font-semibold text-white px-4 py-3 w-full rounded">Tunaikan</button>
+                    </div>
+                </form>
+
+                <form id="formKalkulator" action="" class="flex flex-col items-center w-full hidden">
+                    <div class="w-full mb-7 flex flex-col gap-3">
+                        <label for="emas">Nilai emas, perak, dan/atau permata</label>
+                        <input id="emas" type="text" class="input-number w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7 flex flex-col gap-3">
+                        <label for="uang">Uang tunai, tabungan, deposito</label>
+                        <input id="uang" type="text" class="input-number w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7 flex flex-col gap-3">
+                        <label for="aset">Kendaraan, rumah, aset lain</label>
+                        <input id="aset" type="text" class="input-number w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7 flex flex-col gap-3">
+                        <label for="hutang">Jumlah hutang/cicilan (optional)</label>
+                        <input id="hutang" type="text" class="input-number w-full px-4 bg-gray-100 py-3 shadow">
+                    </div>
+                    <div class="w-full mb-7 flex flex-col gap-3 zakat-harus-bayar">
+
+                    </div>
+                    <div class="flex w-full gap-5">
+                        <button type="reset" class="bg-gray-600 font-semibold text-white px-4 py-3 w-full rounded"
+                            onclick="resetKalkulator()">Reset</button>
+                        <button type="button" class="bg-first font-semibold text-white px-4 py-3 w-full rounded"
+                            onclick="hitungZakat()">Hitung</button>
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            $('.form-btn').click(function () {
+                                const formId = $(this).data('form');
+                                $('.form-content').hide();
+                                $('#' + formId).show();
+                            });
+
+                            $('#toggleFormZakatMal').click(function () {
+                                $('#formZakatMal').show();
+                                $('#formKalkulator').hide();
+                                $('#containerBayar').addClass('border-b-2');
+                                $('#containerBayar').addClass('border-black');
+                                $('#containerKalkulator').removeClass('border-b-2');
+                                $('#containerKalkulator').removeClass('border-black');
+                            });
+
+                            $('#toggleFormKalkulator').click(function () {
+                                $('#formKalkulator').show();
+                                $('#formZakatMal').hide();
+                                $('#containerBayar').removeClass('border-b-2');
+                                $('#containerBayar').removeClass('border-black');
+                                $('#containerKalkulator').addClass('border-b-2');
+                                $('#containerKalkulator').addClass('border-black');
+                            });
+
+                        });
+
+                        function resetKalkulator() {
+                            $('.zakat-harus-bayar').html("");
+                        }
+
+                        function hitungZakat() {
+                            var emas = parseInt($('#emas').val()) ? parseInt($('#emas').val().replace(/\./g, "")) : 0; // Menghapus titik
+                            var uang = parseInt($('#uang').val()) ? parseInt($('#uang').val().replace(/\./g, "")) : 0; // Menghapus titik
+                            var aset = parseInt($('#aset').val()) ? parseInt($('#aset').val().replace(/\./g, "")) : 0; // Menghapus titik
+                            var hutang = parseInt($('#hutang').val()) ? parseInt(($('#hutang').val()).replace(/\./g, "")) : 0; // Menghapus titik
+
+                            var total = emas + uang + aset - hutang
+                            if (total >= 112540000) {
+                                zakat_mal = total * 0.025
+                                zakat_mal = formatRupiah(zakat_mal.toString(), '').replace(/^0+/, '')
+                            } else {
+                                zakat_mal = 0
+                            }
+
+                            $('.zakat-harus-bayar').html(`                                
+                                    <label>Jumlah Zakat yang harus dibayarkan</label>
+                                    <input id="zakatHarusBayar" type="text" disabled class="calculator-item w-full px-4 bg-gray-100 py-3 shadow" value="`+ zakat_mal + `">        
+                                `);
+                        }
+
+                        function formatRupiah(angka, prefix) {
+                            var number_string = angka.replace(/[^,\d]/g, '').toString(), //Menghapus huruf
+                                split = number_string.split(','),
+                                sisa = split[0].length % 3,
+                                rupiah = split[0].substr(0, sisa),
+                                ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+                            // tambahkan titik jika yang di input sudah menjadi angka ribuan
+                            if (ribuan) {
+                                separator = sisa ? '.' : '';
+                                rupiah += separator + ribuan.join('.');
+                            }
+
+                            rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+                            return prefix == undefined ? rupiah : (rupiah ? prefix + rupiah : '');
+                        }
+
+
+                        $(".input-number").keyup(function (e) {
+                            var nilai = formatRupiah($(this).val(), '');
+                            $(this).val(nilai.replace(/^0+/, '')); // Menghapus 0 sebelum angka selain 0
+                        })
+
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="mx-auto flex flex-wrap justify-center w-4/5">
+            <!-- Kolom Pertama -->
+            <div class="w-full lg:w-1/2 px-5">
+                <h3 class="text-xl font-landing font-bold mb-4">
+                    Yayasan Daarussa'adah Mubarokah
+                </h3>
+                <p class="font-landing text-gray-300 mb-4">
+                    Yayasan Daarussa’adah Mubarokah merupakan sebuah lembaga yang
+                    bergerak dalam bidang pendidikan, sosial dan keagamaan. Berlokasi di jalan
+                    Rawamangun Utara II RT 011 RW 01 no. 24, Kelurahan Rawasari,
+                    Kecamatan Cempaka Putih, Jakarta Pusat.
+                </p>
+            </div>
+            <!-- Kolom Kedua -->
+            <div class="flex flex-col gap-2 w-full lg:w-1/2 px-5">
+                <h3 class="text-xl font-landing font-bold mb-4">Hubungi Kami</h3>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="font-landing">+62 87891987242</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="font-landing">yayasandarussadah@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="font-landing">Alamat: Jalan Rawamangun Utara II RT 011 RW 01 no. 24, Kelurahan
+                        Rawasari,
+                        Kecamatan Cempaka Putih, Jakarta Pusat.</span>
+                </div>
+            </div>
+            <!-- <div class="w-full lg:w-2/6 px-4">
+            <h3 class="text-xl font-landing font-bold mb-4">REKENING DONASI</h3>
+            <div class="flex items-center mb-4">
+              <span class="font-landing">Bank Syariah Indonesia (BSI) | 4500003341</span>
+            </div>
+          </div> -->
+    </footer>
+
+    <script src="app.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+    <script src="tailwind.config.js"></script>
+</body>
+
+</html>
